@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--Styles-->
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <!--Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Conversor</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Conversor de unidades</h1>
+    </header>
+    <marquee behavior="scroll" direction="left">El texto se deslizara de derecha a izquierda y cada vez que llegue al final. comenzara de nuevo en un bucle infinito.</marquee>
+    <main>
+
+        <div class="conversor">
+            <select id="conversor" class="form-select" required>
+                <option selected>Conversion</option>
+                <option value="temperatura">Temperatura</option>
+                <option value="distancia">Distancia</option>
+                <option value="peso">Peso</option>
+                <option value="velocidad">Velocidad</option>
+            </select>
+        </div>
+       
+    
+        <section class="contenedor">
+            <div class="card-convertir">
+                <input type="text" id="convertir" class="input">
+                <label class="unidades" id="unidad-1" for="convertir">Celsius</label>
+    
+            </div>
+            <div>
+                <img src="img/igual.png" alt="igual.png">
+            </div>
+            <div class="card-convertido">
+                <input type="text" id="convertido" class="input">
+                <label class="unidades" id="unidad-2" for="convertido">Farenheit </label>
+            </div>
+        </section>
+    </main>
+    <footer>©Margie Bocanegra</footer>
+
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!--SweetAlert2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--JavaScript-->
+    <script src="conversor.js" type="module"></script>
+</body>
+</html>
