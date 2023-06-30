@@ -1,6 +1,10 @@
 
-function distancia(metros){
-    return metros*3.28
+function distanciaP(metros){
+    return (metros*3.28).toFixed(3)
 }
 
-export default distancia
+function distanciaM(pies){
+    return (pies/3.28).toFixed(3)
+}
+
+export  {distanciaP, distanciaM}

@@ -24,27 +24,27 @@
 
         <div class="conversor">
             <select id="conversor" class="form-select" required>
-                <option selected>Conversion</option>
+                <option selected value="Conversion">Conversion</option>
                 <option value="temperatura">Temperatura</option>
                 <option value="distancia">Distancia</option>
                 <option value="peso">Peso</option>
-                <option value="velocidad">Velocidad</option>
+                <!--<option value="velocidad">Velocidad</option>-->
             </select>
         </div>
        
     
         <section class="contenedor">
             <div class="card-convertir">
-                <input type="text" id="convertir" class="input">
-                <label class="unidades" id="unidad-1" for="convertir">Celsius</label>
+                <input type="number" id="convertir" class="input" disabled >
+                <label class="unidades" id="unidad-1" for="convertir">Unidad 1</label>
     
             </div>
             <div>
                 <img src="img/igual.png" alt="igual.png">
             </div>
             <div class="card-convertido">
-                <input type="text" id="convertido" class="input">
-                <label class="unidades" id="unidad-2" for="convertido">Farenheit </label>
+                <input type="number" id="convertido" class="input" disabled>
+                <label class="unidades" id="unidad-2" for="convertido">Unidad 2</label>
             </div>
         </section>
     </main>
