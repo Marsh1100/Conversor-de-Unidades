@@ -2,7 +2,6 @@
 import {temperaturaC, temperaturaF} from "./temperatura.js";
 import {distanciaP, distanciaM}  from "./distancia.js";
 import {pesoLb, pesoKg}  from  "./peso.js";
-import {velocidadKmH, velocidadMs}  from "./velocidad.js";
 
 
 //Elementos del DOM
@@ -17,11 +16,13 @@ const $unidad2 = document.getElementById("unidad-2");
 // AddeventListener
 $selectConversor.addEventListener('input',(e)=>{
     
-
     let select = e.target.value;
     if(select != 'Conversion'){
         $convertir.disabled=false;
         $convertido.disabled=false;
+        
+        $convertir.value=""
+        $convertido.value=""
 
         if(select == "temperatura"){
             $unidad1.textContent = "Celsius";
@@ -39,6 +40,9 @@ $selectConversor.addEventListener('input',(e)=>{
             $unidad2.textContent = "Km/h";
         }
     }else{
+        $convertir.value=""
+        $convertido.value=""
+
         $convertir.disabled=true;
         $convertido.disabled=true;
 

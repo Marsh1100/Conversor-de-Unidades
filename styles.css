@@ -17,13 +17,19 @@ header{
     color: #fd5f03;
     background-color: white;
 }
-marquee{
+nav{
     background-color: bisque;
-    height: 5vh;
+    color: bisque;
+    height: 6vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
+
+
 main{
     margin: auto;
     height: 82vh;
@@ -35,24 +41,44 @@ main{
 }
 
 .conversor{
-    width: 600px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 
 }
 .contenedor{
-    width: 600px;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 
     padding: 20px;
     display: flex;
+  
     justify-content: center;
     gap: 25px;
     background-color: rgba(255, 255, 255, 0.5);
 
     border-radius: 10px;
 }
+
+@media (max-width: 805px) {
+    .contenedor{
+        display: flex;   
+        flex-direction: column;
+        align-items: center;
+
+    }
+  }
+
+  @media (max-width: 320px) {
+    .contenedor{
+        width: 90%;
+        display: flex;   
+        flex-direction: column;
+        align-items: center;
+
+    }
+  }
 .card-convertir,.card-convertido{
     display: flex;
     flex-direction: column;
